@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 25px;
+            background-color:white ;
+            color:black;
+            text-align:center;
+        }
+        body{
+            background:rgb(228, 221, 221) ;
+            padding: 10px;  
+            font-family: Arial;          
+        }
+        .nav{
+            overflow: hidden;
+            background-color:rgb(226, 207, 37);
+        }
+
+        .nav a{
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;
+            color:whitesmoke;
+        }
+        
+        .nav a:hover{
+            background-color: rgb(117, 186, 226);
+        }
+
+        .sol{
+            float: left;
+            width: 75%;
+        }
+        .sag{
+            float: left;
+            width: 25%;
+           padding-left: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .fakeimg{
+            background-color: rgb(150, 133, 109);
+            padding: 30px;
+            width: 100%;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color:rgb(111, 175, 235) ;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media screen and (max-width:800px)
+        {
+            .sag,.sol{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the borwser window to see the effect.</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+    <div class="row">
+        <div class="sol">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7,2020</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some text..</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro possimus delectus illo aliquam ipsam quaerat sequi velit temporibus laboriosam cupiditate repellendus necessitatibus, beatae fuga. Officia sed assumenda quidem enim iusto ratione nihil! Odio, porro.</p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7,2020</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some text..</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro possimus delectus illo aliquam ipsam quaerat sequi velit temporibus laboriosam cupiditate repellendus necessitatibus, beatae fuga. Officia sed assumenda quidem enim iusto ratione nihil! Odio, porro.</p>
+            </div>
+        </div>
+        <div class="sag">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt molitit anim.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
